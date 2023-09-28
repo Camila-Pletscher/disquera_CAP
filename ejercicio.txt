@@ -10,5 +10,11 @@ Utilizar al menos 1 type, ID autogenerados
 Genere la mock data de cada entidad
 Views:
 1.  Generar una vista en donde estén reflejados los siguientes elementos: nombre de la banda, nombre del disco, cantidad de canciones del disco y quién distribuye el mismo.
-Generar una vista de la entidad de ‘Grabaciones’, incluir nombre del disco, nombre de la banda y género, además del nombre y apellido del músico. Mostrar 1 sólo registro, el cual será la última sesión que grabó el músico. Excluir de la vista los siguientes elementos: createdAt, createdBy, modifiedAt, modifiedBy
--   Generar las vistas que necesite para poder completar la consigna satisfactoriamente 
+2.  Generar una vista de la entidad de ‘Grabaciones’, incluir nombre del disco, nombre de la banda y género, además del nombre y apellido del músico. Mostrar 1 sólo registro, el cual será el registro más reciente que haya recibido promoción. Excluir de la vista los siguientes elementos: createdAt, createdBy, modifiedAt, modifiedBy
+-   Generar las vistas que necesite para poder completar la consigna satisfactoriamente
+
+Custom logic: 
+-   Cuando un músico tenga 6 horas, o más, de grabación en un día ganan 2 horas de grabación gratis ese día. Utilizar un elemento de tipo boolean para administrar la promoción (por defecto este elemento se almacenará como false). Tomar en cuenta este hecho para la creación y actualización de registros.
+-   Permitir ingresar músicos de forma masiva
+-   Eliminar músicos de forma masiva
+-   Consultar un músico por medio de su ID (usando una function en el servicio)
